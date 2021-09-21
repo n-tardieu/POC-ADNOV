@@ -1,0 +1,12 @@
+@import '/src/scss/_variables';
+@import '/src/scss/_helpers';
+
+.home-container {
+    background: linear-gradient(107.52deg, #E5F1FD 0%, #FFFFFF 100%);
+    height: 100%;
+}
+
+.global-container {
+    padding-left: 8%;
+    padding-right: 8%;
+}

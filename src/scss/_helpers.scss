@@ -1,0 +1,15 @@
+$browser-context: 16; // Default 16px = 1em
+$browser-size-context: 1440; // Default 16px = 1em0
+
+// Convert 'px' into 'em'
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}

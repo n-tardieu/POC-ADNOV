@@ -1,3 +1,25 @@
 <div class="container">
-    <img [@rotatedState]='state' class="icon" alt="Logo" src="../../../assets/svg/burger_open.svg" (click)="rotate()" />
+    <img [@rotatedState]='state' class="iconBurger" alt="Logo" src="../../../assets/svg/burger_open.svg"
+        (click)="rotate()" />
+    <img [@rotatedStateClose]='state' class="iconClose" alt="Logo" src="../../../assets/svg/burger_close.svg"
+        (click)="rotate()" />
 </div>
+
+<mat-card class="card-section">
+    <div class="link">
+        <p routerLinkActive="active" routerLink="/">Mes dossiers</p>
+        <div class="line" *ngIf="router.url == '/'"></div>
+    </div>
+    <div class="link">
+        <p routerLinkActive="active" routerLink="/123">Base de données</p>
+        <div class="line" *ngIf="router.url == '/123'"></div>
+    </div>
+    <div class="link">
+        <p routerLinkActive="active" routerLink="/456">Base documentaires</p>
+        <div class="line" *ngIf="router.url == '/456'"></div>
+    </div>
+    <div class="link">
+        <p routerLinkActive="active" routerLink="/789">Administration du compte</p>
+        <div class="line" *ngIf="router.url == '/789'"></div>
+    </div>
+</mat-card>

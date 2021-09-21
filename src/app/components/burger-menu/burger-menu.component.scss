@@ -1,3 +1,40 @@
-.container {
-    // position: absolute;
+@import '../../../scss/variables';
+
+.iconBurger {
+    margin-right: -24px;
+}
+
+.card-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    top: $headerHeight + 15px;
+    right: 8%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    text-align: end;
+    z-index: 10;
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 8px;
+    }
+}
+
+.active {
+    color: #DE6D1B;
+}
+
+.line {
+    border-right: 2px solid #DE6D1B;
+    margin-top: 6px;
+    height: 12px;
+}
+
+.link {
+    display: flex;
+    justify-content: end;
 }

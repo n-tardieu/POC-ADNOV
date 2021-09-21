@@ -20,7 +20,9 @@ import { LoginComponent } from './components/login/login.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { BurgerMenuComponent } from './components/burger-menu/burger-menu.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BuyingPropertyComponent,
     AboutComponent,
     CameraComponent,
-    LoginComponent
+    LoginComponent,
+    BurgerMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

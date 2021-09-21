@@ -1,9 +1,60 @@
+@import '../../../scss/variables';
+
 .container {
     display: flex;
     align-items: center;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: $headerHeight;
     background-color: #FFFFFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+}
+
+.part-menu {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding-right: 7px;
+}
+
+.separate-monney {
+    border-left: 2px solid #DE6D1B;
+    height: 24px;
+    padding-left: 7px;
+}
+
+.separate-user {
+    border-left: 2px solid #DE6D1B;
+    height: 24px;
+    padding-left: 7px;
+}
+
+.part-monney {
+    padding-left: 7px;
+    padding-right: 32px;
+    p { margin: 0px}
+    b { color: #DE6D1B;}
+}
+
+.part-user {
+    padding-left: 7px;
+    padding-right: 64px;
+    p { margin: 0px}
+    b { color: #DE6D1B;}
+    p:last-child {
+        text-align: end;
+        color: #5095EA;
+    }
 }

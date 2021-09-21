@@ -1,8 +1,14 @@
+@import '../../../scss/variables';
+
+.home-container {
+    height: 100%;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 80px);
+    height: calc(100vh - #{$headerHeight});
 }
 
 .form-content {
@@ -12,6 +18,7 @@
     .form-field {
         min-width: 150px;
         max-width: 500px;
+        margin-bottom: 20px;
      }
     input {
         margin-left: 16%;
@@ -42,11 +49,11 @@
 }
 
 .section-backgroud{
-    top: 80px;
+    top: $headerHeight;
     right: 0;
     position: absolute;
     width: 72%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - #{$headerHeight});
     overflow: hidden;
     .content-picture {
         object-fit: cover;

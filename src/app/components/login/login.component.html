@@ -1,37 +1,39 @@
-<app-header></app-header>
-<div class="container">
-    <mat-card class="login-section">
-        <h1>Identifier-vous</h1>
+<div class="home-container">
+    <app-header [loginPage]="false"></app-header>
+    <div class="container">
+        <mat-card class="login-section">
+            <h1>Identifier-vous</h1>
 
-        <form class="form-content">
-            <mat-form-field class="form-field" appearance="fill">
-                <input class="input-icon-user" matInput placeholder="Identifiant" value="">
-            </mat-form-field>
-            <mat-form-field class="form-field" appearance="fill">
-                <input class="input-icon-pwd" matInput placeholder="Mot de passe" value="">
-            </mat-form-field>
-            <div class="card-bottom">
-                <button class="login-btn" routerLink="">S’authentifier</button>
-                <p>Mot de passe oublié ?</p>
+            <form class="form-content">
+                <div class="form-field" appearance="fill">
+                    <input class="input-icon-user" placeholder="Identifiant" value="">
+                </div>
+                <div class="form-field" appearance="fill">
+                    <input class="input-icon-pwd" placeholder="Mot de passe" value="">
+                </div>
+                <div class="card-bottom">
+                    <button class="login-btn" routerLink="">S’authentifier</button>
+                    <p>Mot de passe oublié ?</p>
+                </div>
+            </form>
+        </mat-card>
+
+        <div class="login-bottom">
+            <div class="demo-txt">
+                <p> Besoin d’une démo, des questions sur le logiciel et son fonctionnement ?
+                    <br>
+                    <a href="#">Contactez-nous !</a>
+                </p>
             </div>
-        </form>
-    </mat-card>
-
-    <div class="login-bottom">
-        <div class="demo-txt">
-            <p> Besoin d’une démo, des questions sur le logiciel et son fonctionnement ?
+            <div class="link-txt">
+                <a href="#">Tarifs</a>
                 <br>
-                <a href="#">Contactez-nous !</a>
-            </p>
+                <a href="#">Conditions d'abonnement</a>
+            </div>
         </div>
-        <div class="link-txt">
-            <a href="#">Tarifs</a>
-            <br>
-            <a href="#">Conditions d'abonnement</a>
-        </div>
-    </div>
 
-</div>
-<div class="section-backgroud">
-    <img class="content-picture" alt="Logo" src="../../../assets/svg/login-building.png" />
+    </div>
+    <div class="section-backgroud">
+        <img class="content-picture" alt="Logo" src="../../../assets/svg/login-building.png" />
+    </div>
 </div>

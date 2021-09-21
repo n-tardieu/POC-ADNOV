@@ -1,5 +1,26 @@
-<div class="container">
-    <div class="section-logo">
-        <img width="100" alt="Logo" routerLink="/login" src="../../../assets/svg/adnov_logo.png" />
+<div class="container" *ngIf="loginPage == false">
+    <img width="100" alt="Logo" routerLink="/" src="../../../assets/svg/adnov_logo.png" />
+</div>
+
+<div class="container" *ngIf="loginPage">
+    <div class="menu">
+        <img width="100" alt="Logo" src="../../../assets/svg/adnov_logo.png" />
+        <div class="part-menu">
+            <img class="icon" alt="Logo" src="../../../assets/svg/monay_icon.svg" />
+            <div class="separate-monney"></div>
+            <div class="part-monney">
+                <p>PORTEFEUILLE</p>
+                <p><b>450</b> UNITES</p>
+            </div>
+            <img class="icon" alt="Logo" src="../../../assets/svg/user_orange_icon.svg" />
+            <div class="separate-user"></div>
+            <div class="part-user">
+                <br>
+                <p>OFFICE : MIN.NOT</p>
+                <p>Hélène VIEILLEDENT</p>
+                <p class="logout-txt" routerLink="/login"><a>Déconnexion</a></p>
+            </div>
+            <app-burger-menu></app-burger-menu>
+        </div>
     </div>
 </div>

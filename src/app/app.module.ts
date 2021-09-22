@@ -23,6 +23,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { BurgerMenuComponent } from './components/burger-menu/burger-menu.component';
+import { PropertyComponent } from './components/property/property.component';
+import { PropertyCardComponent } from './components/property/property-card/property-card.component';
+import { PropertyListComponent } from './components/property/property-list/property-list.component';
+import { PropertyPicturesComponent } from './components/property/property-pictures/property-pictures.component';
+import { PropertyDetailsComponent } from './components/property/property-details/property-details.component';
 
 
 @NgModule({
@@ -37,7 +42,12 @@ import { BurgerMenuComponent } from './components/burger-menu/burger-menu.compon
     AboutComponent,
     CameraComponent,
     LoginComponent,
-    BurgerMenuComponent
+    BurgerMenuComponent,
+    PropertyComponent,
+    PropertyCardComponent,
+    PropertyListComponent,
+    PropertyPicturesComponent,
+    PropertyDetailsComponent
   ],
   imports: [
     BrowserModule,

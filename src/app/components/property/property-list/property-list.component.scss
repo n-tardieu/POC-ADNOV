@@ -1,0 +1,91 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.orange-bar {
+    border-bottom: 2px solid #FF862F;
+    width: 46px;
+}
+
+
+.folder-header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.folder-body-section {
+    display: flex;
+    justify-content: space-between;
+    height: 520px;
+}
+
+
+.archive-header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.archive-body-section {
+    display: flex;
+    justify-content: space-between;
+    height: 520px;
+}
+
+.new-folder-btn {
+    width: 148px;
+    height: 40px;
+    background: linear-gradient(93.58deg, #DE6D1B 0%, #FFBA52 100%);
+    border-radius: 32px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.more-btn {
+    width: 128px;
+    height: 40px;
+    border: 2px solid #DE6D1B;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #DE6D1B;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 32%;
+    height: 300px;
+}

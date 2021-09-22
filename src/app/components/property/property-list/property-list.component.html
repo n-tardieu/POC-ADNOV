@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Bonjour Hélène</h1>
+    <div class="orange-bar"></div>
+    <div class="folder-section">
+        <div class="folder-header-section">
+            <h2>Mes dossiers en cours</h2>
+            <button class="new-folder-btn" routerLink="">Nouveau dossier</button>
+        </div>
+        <div class="folder-body-section">
+            <app-property-card class="card" [property]="property" *ngFor="let property of propertyList">
+            </app-property-card>
+        </div>
+        <div class="more">
+            <button class="more-btn">Afficher tout</button>
+        </div>
+
+    </div>
+
+    <div class="archive-section">
+        <div class="archive-header-section">
+            <h2>Mes dossiers archivés</h2>
+        </div>
+        <div class="archive-body-section">
+            <app-property-card class="card" [property]="property" *ngFor="let property of archivedList">
+            </app-property-card>
+        </div>
+        <div class="more">
+            <button class="more-btn">Afficher tout</button>
+        </div>
+    </div>
+</div>

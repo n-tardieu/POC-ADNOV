@@ -5,7 +5,7 @@
         (click)="rotate()" />
 </div>
 
-<mat-card class="card-section">
+<mat-card [@stateCollapse]='state' class="card-section">
     <div class="link">
         <p routerLinkActive="active" routerLink="/">Mes dossiers</p>
         <div class="line" *ngIf="router.url == '/'"></div>

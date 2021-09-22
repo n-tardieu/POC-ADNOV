@@ -19,6 +19,17 @@ import { Router } from '@angular/router';
       state('default', style({ transform: 'rotate(0)', opacity: 0 })),
       transition('rotated => default', animate('300ms ease-out')),
       transition('default => rotated', animate('300ms ease-in'))
+    ]),
+    trigger('stateCollapse', [
+      state('rotated', style({
+        visibility: 'display'
+      })),
+      state('default', style({
+        visibility: 'hidden',
+        opacity: 0
+      })),
+      transition('rotated => default', animate('300ms ease-out')),
+      transition('default => rotated', animate('300ms ease-in'))
     ])
   ]
 })

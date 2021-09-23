@@ -1,0 +1,29 @@
+@import '/src/scss/_variables';
+@import '/src/scss/_helpers';
+
+.container {
+    background: linear-gradient(107.52deg, #E5F1FD 0%, #FFFFFF 100%);
+    height: calc(100vh);
+}
+
+.global-container {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - #{$headerHeight} - #{$footerHeight}) ;
+
+   .left-container {
+       height: 100%;
+       width: 70%;
+       overflow: hidden;
+       img {
+           height: auto;
+           width: 100%;
+       }
+   }
+   .right-container {
+    background: linear-gradient(107.52deg, #E5F1FD 0%, #FFFFFF 100%);
+    height: 100%;
+    width: 30%;
+    overflow: auto;
+   }
+}

@@ -12,7 +12,6 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContentComponent } from './components/content/content.component';
 import { BuyingPropertyComponent } from './components/buying-property/buying-property.component';
-import { AboutComponent } from './components/about/about.component';
 import { CameraComponent } from './components/camera/camera.component';
 import { WebcamModule } from 'ngx-webcam';
 import { LoginComponent } from './components/login/login.component';
@@ -28,6 +27,9 @@ import { PropertyCardComponent } from './components/property/property-card/prope
 import { PropertyListComponent } from './components/property/property-list/property-list.component';
 import { PropertyPicturesComponent } from './components/property/property-pictures/property-pictures.component';
 import { PropertyDetailsComponent } from './components/property/property-details/property-details.component';
+import { MapComponent } from './components/map/map.component';
+import { ScoreComponent } from './components/map/score/score.component';
+import { AboutComponent } from './components/map/about/about.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { PropertyDetailsComponent } from './components/property/property-details
     PropertyCardComponent,
     PropertyListComponent,
     PropertyPicturesComponent,
-    PropertyDetailsComponent
+    PropertyDetailsComponent,
+    MapComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,37 @@
+.container {
+  padding: 40px;
+}
+
+
+    h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    p {
+        font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+
+text-align: justify;
+    }
+
+.score-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.score-card {
+    width: calc(42% - 5px);
+    height: 220px;
+    margin-top: 32px;
+}
+

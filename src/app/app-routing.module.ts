@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
 import { BuyingPropertyComponent } from './components/buying-property/buying-property.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContentComponent } from './components/content/content.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { AboutComponent } from './components/map/about/about.component';
+import { MapComponent } from './components/map/map.component';
+import { ScoreComponent } from './components/map/score/score.component';
 import { PropertyDetailsComponent } from './components/property/property-details/property-details.component';
 import { PropertyListComponent } from './components/property/property-list/property-list.component';
 import { PropertyComponent } from './components/property/property.component';
@@ -37,15 +39,25 @@ const routes: Routes = [
         path: 'contact',
         component: ContactComponent,
         pathMatch: 'full'
-      }, {
-        path: 'about',
-        component: AboutComponent,
-        pathMatch: 'full'
       }]
   },
   {
-    path: 'buy',
+    path: 'picture',
     component: BuyingPropertyComponent
+  },
+  {
+    path: 'map',
+    component: MapComponent,
+    children: [
+      {
+        path: '',
+        component: AboutComponent,
+        pathMatch: 'full'
+      }, {
+        path: 'score',
+        component: ScoreComponent,
+        pathMatch: 'full'
+      }]
   },
   {
     path: 'login',

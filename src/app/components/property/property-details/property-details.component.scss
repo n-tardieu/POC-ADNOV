@@ -5,7 +5,7 @@
 .return {
     margin-top: 20px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     h3 {
         font-family: Roboto;
         font-style: normal;
@@ -257,13 +257,17 @@ mat-card .map{
     }
 }
 
+.form {
+    padding-top: 20px;
+}
+
 .form, .form-input {
     display: flex;
     justify-content: space-between;
 }
 
 .form-left, .form-right {
-    width: calc(50% - 8px);
+    width: calc(50% - 10px);
 }
 
 .form-input {
@@ -274,15 +278,19 @@ mat-card .map{
         margin: 0px
     }
     .input {
-        width: 50%;
-        height: 22px;
-        width: 140px;
+        height: 24px;
+        padding-right: 16px !important;
+        width: calc(50% - 16px) !important;
         background: #F1EFEF;
-        border: none;
-        padding-right: 16px;
         text-align: end;
+      border:none;
+        // border-color: #FFFFFF;
+        // border-radius: 4px;
+        padding: 0px;
+        margin: 0px;
     }
     .select {
+        height: 24px;
         width: 50%;
         background: #F1EFEF;
         border-radius: 4px;
@@ -292,6 +300,17 @@ mat-card .map{
     }
     .mat-select-arrow {
         border-top: 5px solid rgb(10, 73, 99);
+    }
+    .mat-button {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        height: 24px;
+        width: 50%;
+        border: 2px solid #F1EFEF;
+        background: #FFFFFF;
+        color: #656565;
+        font-size: 12px;
     }
     
 }

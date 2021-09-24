@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -63,6 +64,7 @@ import { AboutComponent } from './components/map/about/about.component';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatExpansionModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

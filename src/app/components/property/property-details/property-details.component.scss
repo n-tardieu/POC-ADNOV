@@ -51,6 +51,7 @@ h2 {
 
 .card-dpe {
     margin-top: 20px;
+    margin-bottom: 40px;
     padding: 42px;
     .dpe-img {
         margin-top: 20px;
@@ -318,4 +319,51 @@ mat-card .map{
 .mat-select-arrow {
     border-left: unset !important;
     border-right: unset !important;
+}
+
+
+// panel card
+.card-panel {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+
+.card-panel-head{
+    padding: 42px;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+    }
+    .edit-img {
+        margin-top: -20px;
+        margin-right: -28px;
+        height: 42px;
+        width: 42px;
+        img {
+            margin-top: -14px;
+            height: 20px;
+        }
+    }
+}
+
+
+.card-panel-body {
+    .panel-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px
+    }
+    .mat-expansion-panel-header{
+        padding: 0px 42px !important;
+        background: #FAFAFA !important;
+        border-bottom: solid 1px #C4C4C4;;
+    }
 }

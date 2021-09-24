@@ -8,3 +8,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .cursor-section {
     cursor: pointer;
 }
+
+
+// property-details panel custom override
+.mat-expansion-panel-body {
+    padding: 0 38px 0px 42px !important;
+}
+
+.mat-expansion-panel-spacing {
+    margin: 0px !important;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none !important
+}

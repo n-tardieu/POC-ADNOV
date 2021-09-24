@@ -2,36 +2,101 @@
   padding: 40px;
 }
 
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
 
-    h3 {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 36px;
-        line-height: 42px;
-    }
-
-    p {
-        font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 24px;
-/* or 200% */
-
-text-align: justify;
-    }
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: justify;
+}
 
 .score-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    padding-bottom: 80px;
 }
 
 .score-card {
     width: calc(42% - 5px);
-    height: 220px;
     margin-top: 32px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 17px;
+    h1 {
+        margin: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+}
+
+.card-body {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    .card_body_nb_1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: right;
+        color: #FF862F;
+        margin: 0px;
+
+    }
+    .card_body_nb_2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FF862F;
+    }
+}
+
+.description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #C4C4C4;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    .mat-button {
+        margin-top: 21px;
+        margin-bottom: 21px;
+        width: 128px;
+        background: linear-gradient(135deg, #5095EA 0%, #7ECFFD 100%);
+        border-radius: 32px;
+        color: #FFFFFF;
+    }
 }
 

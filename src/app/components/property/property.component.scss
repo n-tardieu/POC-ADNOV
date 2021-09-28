@@ -4,7 +4,7 @@
 .global-container {
     height: calc(100vh - #{$headerHeight} - #{$footerHeight});
     background: linear-gradient(107.52deg, #E5F1FD 0%, #FFFFFF 100%);
-    padding-right: 8%;
-    padding-left: 8%;
+    padding-right:400px;
+    padding-left: 400px;
     overflow: auto;
 }

@@ -1,16 +1,16 @@
-<mat-card class="card">
+<mat-card class="card" routerLink="more/{{property.id}}">
     <div class="card-left">
-        <h1>{{property.name}}</h1>
+        <h1>Dossier ref R.783526284{{property.id}}</h1>
         <div class="address-section"><img src="../../../../assets/svg/card-description.svg">
-            <p>Cyprien</p>
+            <p>{{property.name}}</p>
         </div>
         <div class="address-section"><img src="../../../../assets/svg/card-position.svg">
-            <p>350 000 €</p>
+            <p>{{property.location}}</p>
         </div>
     </div>
     <div class="card-right">
         <button mat-fab>
-            <img routerLink="more/{{property.id}}" src="../../../../assets/svg/options.svg">
+            <img src="../../../../assets/svg/options.svg">
         </button>
     </div>
 </mat-card>

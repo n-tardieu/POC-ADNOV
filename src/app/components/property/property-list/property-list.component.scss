@@ -19,6 +19,7 @@ h2 {
 
 .header-hello {
     display: flex;
+    align-items: center;
     padding-top: 20px;
     justify-content: space-between;
     input {
@@ -28,15 +29,17 @@ h2 {
     input:focus-visible {
         border: none;
     }
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
 }
 
-.search-input {
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 35px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background: none;
 }
+
 
 .orange-bar {
     border-bottom: 2px solid #FF862F;
@@ -67,6 +70,9 @@ h2 {
     .lenght-btn {
         width: 80px;
         height: 80px;
+        p {
+            margin: 0px;
+        }
     }
 }
 
@@ -79,6 +85,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 20px;
     p {
         margin-left: 10px;
         font-size: 36px;
@@ -109,7 +116,7 @@ h2 {
 }
 
 .card {
-    width: 28%;
+    width: 352px;
 }
 
 button {

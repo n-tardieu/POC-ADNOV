@@ -1,0 +1,116 @@
+[debug] [2021-09-28T12:19:33.158Z] ----------------------------------------------------------------------
+[debug] [2021-09-28T12:19:33.161Z] Command:       C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node.exe C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-09-28T12:19:33.162Z] CLI Version:   9.18.0
+[debug] [2021-09-28T12:19:33.162Z] Platform:      win32
+[debug] [2021-09-28T12:19:33.162Z] Node Version:  v12.19.0
+[debug] [2021-09-28T12:19:33.164Z] Time:          Tue Sep 28 2021 14:19:33 GMT+0200 (GMT+02:00)
+[debug] [2021-09-28T12:19:33.164Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-28T12:19:33.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-28T12:19:33.259Z] > authorizing via signed-in user (ntardieu.contact@gmail.com)
+[debug] [2021-09-28T12:19:33.259Z] [iam] checking project pwa-adnov for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-09-28T12:19:33.262Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-28T12:19:33.263Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:19:33.609Z] <<< HTTP RESPONSE 200 {"date":"Tue, 28 Sep 2021 12:19:33 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:19:33.651Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-adnov:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-09-28T12:19:34.831Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. self signed certificate in certificate chain
+[debug] [2021-09-28T12:19:34.834Z] > refreshing access token with scopes: []
+[debug] [2021-09-28T12:19:34.835Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:19:35.036Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 28 Sep 2021 12:19:35 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:19:35.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pwa-adnov [none]
+[debug] [2021-09-28T12:19:35.331Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+[debug] [2021-09-28T12:19:35.334Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+    at Client.doRequest (C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project pwa-adnov. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-09-28T12:19:47.999Z] ----------------------------------------------------------------------
+[debug] [2021-09-28T12:19:48.004Z] Command:       C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node.exe C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-09-28T12:19:48.005Z] CLI Version:   9.18.0
+[debug] [2021-09-28T12:19:48.005Z] Platform:      win32
+[debug] [2021-09-28T12:19:48.005Z] Node Version:  v12.19.0
+[debug] [2021-09-28T12:19:48.007Z] Time:          Tue Sep 28 2021 14:19:48 GMT+0200 (GMT+02:00)
+[debug] [2021-09-28T12:19:48.007Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-28T12:19:48.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-28T12:19:48.115Z] > authorizing via signed-in user (ntardieu.contact@gmail.com)
+[debug] [2021-09-28T12:19:48.115Z] [iam] checking project pwa-adnov for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-09-28T12:19:48.120Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-28T12:19:48.121Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:19:52.307Z] <<< HTTP RESPONSE 200 {"date":"Tue, 28 Sep 2021 12:19:52 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:19:52.338Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-adnov:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-09-28T12:19:52.442Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. self signed certificate in certificate chain
+[debug] [2021-09-28T12:19:52.445Z] > refreshing access token with scopes: []
+[debug] [2021-09-28T12:19:52.445Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:19:52.602Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 28 Sep 2021 12:19:52 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:19:52.644Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pwa-adnov [none]
+[debug] [2021-09-28T12:19:52.746Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+[debug] [2021-09-28T12:19:52.749Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+    at Client.doRequest (C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project pwa-adnov. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-09-28T12:24:55.697Z] ----------------------------------------------------------------------
+[debug] [2021-09-28T12:24:55.702Z] Command:       C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node.exe C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-09-28T12:24:55.702Z] CLI Version:   9.18.0
+[debug] [2021-09-28T12:24:55.702Z] Platform:      win32
+[debug] [2021-09-28T12:24:55.702Z] Node Version:  v12.19.0
+[debug] [2021-09-28T12:24:55.704Z] Time:          Tue Sep 28 2021 14:24:55 GMT+0200 (GMT+02:00)
+[debug] [2021-09-28T12:24:55.705Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-28T12:24:55.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-28T12:24:55.778Z] > authorizing via signed-in user (ntardieu.contact@gmail.com)
+[debug] [2021-09-28T12:24:55.778Z] [iam] checking project pwa-adnov for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-09-28T12:24:55.780Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-28T12:24:55.781Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:24:56.243Z] <<< HTTP RESPONSE 200 {"date":"Tue, 28 Sep 2021 12:24:56 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:24:56.282Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-adnov:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-09-28T12:24:56.435Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. self signed certificate in certificate chain
+[debug] [2021-09-28T12:24:56.440Z] > refreshing access token with scopes: []
+[debug] [2021-09-28T12:24:56.441Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:24:56.627Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 28 Sep 2021 12:24:56 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:24:56.670Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pwa-adnov [none]
+[debug] [2021-09-28T12:24:57.105Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+[debug] [2021-09-28T12:24:57.108Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+    at Client.doRequest (C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project pwa-adnov. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-09-28T12:27:18.073Z] ----------------------------------------------------------------------
+[debug] [2021-09-28T12:27:18.077Z] Command:       C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node.exe C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-09-28T12:27:18.077Z] CLI Version:   9.18.0
+[debug] [2021-09-28T12:27:18.077Z] Platform:      win32
+[debug] [2021-09-28T12:27:18.078Z] Node Version:  v12.19.0
+[debug] [2021-09-28T12:27:18.079Z] Time:          Tue Sep 28 2021 14:27:18 GMT+0200 (GMT+02:00)
+[debug] [2021-09-28T12:27:18.079Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-28T12:27:18.152Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-28T12:27:18.152Z] > authorizing via signed-in user (ntardieu.contact@gmail.com)
+[debug] [2021-09-28T12:27:18.152Z] [iam] checking project pwa-adnov for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-09-28T12:27:18.156Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-28T12:27:18.156Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:27:18.540Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 28 Sep 2021 12:27:18 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:27:18.575Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-adnov:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-09-28T12:27:18.782Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. self signed certificate in certificate chain
+[debug] [2021-09-28T12:27:18.784Z] > refreshing access token with scopes: []
+[debug] [2021-09-28T12:27:18.784Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-28T12:27:18.905Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 28 Sep 2021 12:27:18 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-28T12:27:18.946Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pwa-adnov [none]
+[debug] [2021-09-28T12:27:19.099Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+[debug] [2021-09-28T12:27:19.101Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pwa-adnov
+    at Client.doRequest (C:\Users\Public\Documents\devbox\sdk\node-v12.19.0-win-x64\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project pwa-adnov. Please make sure the project exists and your account has permission to access it.

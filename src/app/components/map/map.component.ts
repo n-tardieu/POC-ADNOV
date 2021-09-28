@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
+  widgetClick = false
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  switchClick() {
+    this.widgetClick = !this.widgetClick
+  }
 }

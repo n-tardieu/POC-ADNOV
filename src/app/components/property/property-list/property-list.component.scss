@@ -60,7 +60,8 @@ h2 {
 .folder-body-section, .archive-body-section {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 30px 30px;
     .mat-fab.mat-accent {
@@ -70,6 +71,7 @@ h2 {
     .lenght-btn {
         width: 80px;
         height: 80px;
+        margin-right: 20px;
         p {
             margin: 0px;
         }
@@ -116,7 +118,7 @@ h2 {
 }
 
 .card {
-    width: 352px;
+    width: 30%;
 }
 
 button {

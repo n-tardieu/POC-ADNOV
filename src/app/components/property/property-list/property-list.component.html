@@ -16,10 +16,12 @@
         <div class="folder-body-section">
             <app-property-card class="card" [property]="property" *ngFor="let property of propertyList">
             </app-property-card>
-            <button class="lenght-btn" mat-fab>
-                <p>2 +</p>
-            </button>
-            <button class="more-btn">Afficher tout</button>
+            <div class="card">
+                <button class="lenght-btn" mat-fab>
+                    <p>2 +</p>
+                </button>
+                <button class="more-btn">Afficher tout</button>
+            </div>
         </div>
     </div>
 
@@ -33,10 +35,12 @@
         <div class="archive-body-section">
             <app-property-card class="card" [property]="property" *ngFor="let property of archivedList">
             </app-property-card>
-            <button class="lenght-btn" mat-fab>
-                <p>26 +</p>
-            </button>
-            <button class="more-btn">Afficher tout</button>
+            <div class="card">
+                <button class="lenght-btn card" mat-fab>
+                    <p>26 +</p>
+                </button>
+                <button class="more-btn">Afficher tout</button>
+            </div>
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@
 </div>
 <div class="header-section">
     <h2>R.85789713</h2>
-    <button class="photo-btn" routerLink="/picture">Ajouter photo +</button>
+    <!-- <button class="photo-btn" >Ajouter photo +</button> -->
 </div>
 <div class="body-section">
     <div class="body-section-left">
@@ -28,7 +28,14 @@
                 </div>
                 <img class="detail-img" src="../../../../assets/svg/detail.jpg">
             </div>
-            <img class="apprt-img" src="../../../../assets/svg/apprt1.jpg">
+            <img class="apprt-img" src="../../../../assets/svg/appartement_detail.png">
+            <div class="card-section-footer">
+                <div class="item"></div>
+                <img class="caroussel-img" src="../../../../assets/svg/property-caroussel.svg">
+                <button class="edit-img" mat-fab>
+                    <img routerLink="/picture" src="../../../../assets/svg/camera_logo.svg">
+                </button>
+            </div>
         </mat-card>
 
         <mat-card class="card-form">
@@ -38,11 +45,16 @@
 
             </div>
             <p>Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet,
-                consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed
-                diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet,
-                consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed
-                diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet,
-                consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed
+                consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr,
+                sed
+                diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr,
+                sed
+                diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipsicing elitr, sed diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr,
+                sed
                 diam. Lorem ipsum dolor sit amet, consetetur sadipsicing elitr, sed diam.</p>
             <div class="form">
                 <div class="form-left">
@@ -199,7 +211,7 @@
             <div class="card-dpe-head">
                 <h3>Diagnostic énergétiquee</h3>
                 <button class="edit-img" mat-fab>
-                    <img routerLink="/map" src="../../../../assets/svg/edit_icon.svg">
+                    <img src="../../../../assets/svg/edit_icon.svg">
                 </button>
             </div>
             <img class="dpe-img" src="../../../../assets/svg/dpe.png">
@@ -231,7 +243,8 @@
             </div>
         </mat-card>
 
-        <button class="orange-btn-icon">Activer cityScan <img src="../../../../assets/svg/position_icon.svg"></button>
+        <button class="orange-btn-icon" routerLink="/map">Activer cityScan <img
+                src="../../../../assets/svg/position_icon.svg"></button>
 
         <div class="map">
             <div class="img-map">
@@ -243,7 +256,8 @@
             <img class="map" src="../../../../assets/svg/map.png">
         </div>
 
-        <mat-card class="card-panel">
+        <!-- Maquette v1 Qualité de l'address -->
+        <!-- <mat-card class="card-panel">
             <div class="card-panel-head">
                 <h3>Qualité de l’adresse</h3>
                 <button class="edit-img" mat-fab>
@@ -344,7 +358,7 @@
                     </mat-expansion-panel>
                 </mat-accordion>
             </div>
-        </mat-card>
+        </mat-card> -->
 
     </div>
 </div>

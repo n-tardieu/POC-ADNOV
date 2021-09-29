@@ -64,3 +64,8 @@
     overflow: auto;
    }
 }
+
+:ng-deep iframe {
+        display: none !important;
+    
+}

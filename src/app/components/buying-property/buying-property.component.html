@@ -1,4 +1,24 @@
-<app-camera (pictureTaken)="handleImage($event)"></app-camera>
-<div class="snapshot" *ngIf="webcamImage">
-    <img [src]="webcamImage.imageAsDataUrl" />
+<div class="container">
+    <app-header [loginPage]="true"></app-header>
+    <div class="return">
+        <img routerLink="/card/more/1" src="../../../../assets/svg/arrow.svg">
+        <h3 routerLink="/card/more/1">Retour</h3>
+        <p routerLink="/card">Accueil</p>
+        <p> > </p>
+        <p routerLink="/card">Mes dossiers en cours</p>
+        <p> > </p>
+        <p routerLink="/card/more/1"> Dossier ref. R7835262841</p>
+        <p> > </p>
+        <p> Fiche immobilière</p>
+        <p> ></p>
+        <p class="underline">Photo</p>
+
+    </div>
+    <div class="global-container">
+        <app-camera (pictureTaken)="handleImage($event)"></app-camera>
+        <div class="snapshot" *ngIf="webcamImage">
+            <img [src]="webcamImage.imageAsDataUrl" />
+        </div>
+    </div>
+    <app-footer></app-footer>
 </div>

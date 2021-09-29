@@ -1,16 +1,16 @@
-<div style="text-align:center">
-    <div>
-        <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
-            *ngIf="showWebcam" [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
-            [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
-            (initError)="handleInitError($event)"></webcam>
+<div class="container">
+    <webcam [height]="700" [width]="700" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+        *ngIf="showWebcam" [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+        [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
+        (initError)="handleInitError($event)"></webcam>
 
-        <div class="cursor-section" (click)="triggerSnapshot();" title="Take Picture">Take</div>
-        <div class="cursor-section" (click)="showNextWebcam(true);" title="Switch Camera">Switch</div>
-    </div>
+    <button class="edit-img" (click)="triggerSnapshot();" mat-fab>
+        <img routerLink="/picture" src="../../../../assets/svg/camera_logo.svg">
+    </button>
+    <!-- <div class="cursor-section"  title="Take Picture">Take</div> -->
+    <!-- <div class="cursor-section" (click)="showNextWebcam(true);" title="Switch Camera">Switch</div> -->
+    <h4 *ngIf="errors.length > 0">Messages:</h4>
+    <ul *ngFor="let error of errors">
+        <li>{{error | json}}</li>
+    </ul>
 </div>
-
-<h4 *ngIf="errors.length > 0">Messages:</h4>
-<ul *ngFor="let error of errors">
-    <li>{{error | json}}</li>
-</ul>

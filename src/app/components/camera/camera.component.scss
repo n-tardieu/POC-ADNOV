@@ -14,4 +14,17 @@
   ul.links {
     padding-bottom: 20px;
   }
-  
+
+
+.container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.mat-fab.mat-accent {
+  background: linear-gradient(135deg, #5095EA 0%, #7ECFFD 100%);;
+}
+

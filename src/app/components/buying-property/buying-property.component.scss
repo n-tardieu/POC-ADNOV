@@ -1,8 +1,58 @@
+
+  @import '/src/scss/_variables';
+  @import '/src/scss/_helpers';
+  
+  .container {
+      background: linear-gradient(107.52deg, #E5F1FD 0%, #FFFFFF 100%);
+      height: calc(100vh);
+      overflow: hidden;
+  }
+  
+  .global-container {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      height: calc(100vh - #{$headerHeight} - #{$footerHeight}) ;
+  }
+    
+
+
 .snapshot {
     display: flex;
     justify-content: center;
+    padding-top: 40px;
+
 }
 
 img {
-    width: 500px;
+    width: 700px;
+    padding-bottom: 20px;
+}
+
+.return {
+    margin-top: 20px;
+    padding: 0px;
+    padding-left: 8%;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        margin-right: 12px;
+    }
+    img {
+        padding-right: 20px;
+        width: 32px;
+    }
+    p {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .underline {
+        text-decoration: underline;
+    }
 }

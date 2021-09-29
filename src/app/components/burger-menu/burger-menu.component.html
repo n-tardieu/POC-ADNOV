@@ -7,19 +7,19 @@
 
 <mat-card [@stateCollapse]='state' class="card-section">
     <div class="link">
-        <p routerLinkActive="active" routerLink="/">Mes dossiers</p>
-        <div class="line" *ngIf="router.url == '/'"></div>
+        <p routerLinkActive="active" routerLink="/card">Mes dossiers</p>
+        <div class="line" *ngIf="router.url == '/card'"></div>
     </div>
     <div class="link">
-        <p routerLinkActive="active" routerLink="/123">Base de données</p>
+        <p routerLinkActive="active">Base de données</p>
         <div class="line" *ngIf="router.url == '/123'"></div>
     </div>
     <div class="link">
-        <p routerLinkActive="active" routerLink="/456">Base documentaires</p>
+        <p routerLinkActive="active">Base documentaires</p>
         <div class="line" *ngIf="router.url == '/456'"></div>
     </div>
     <div class="link">
-        <p routerLinkActive="active" routerLink="/789">Administration du compte</p>
+        <p routerLinkActive="active">Administration du compte</p>
         <div class="line" *ngIf="router.url == '/789'"></div>
     </div>
 </mat-card>

@@ -192,6 +192,7 @@ h2 {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     font-family: Roboto;
+    cursor: pointer;
     font-style: normal;
     font-size: 14px;
     line-height: 16px;
@@ -199,6 +200,10 @@ h2 {
     margin-top: 20px;
     margin-left: auto; 
     margin-right: 0;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .photo-btn {

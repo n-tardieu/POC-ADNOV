@@ -30,6 +30,7 @@ p {
 .score-card {
     width: calc(40% - 8px);
     margin-top: 32px;
+    cursor: pointer;
     display: flex;
     align-content: center;
     flex-direction: column;
